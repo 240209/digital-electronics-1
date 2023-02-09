@@ -21,21 +21,21 @@ end architecture dataflow;
 
    | **c** | **b** |**a** | **f_ORIG** | **f_(N)AND** | **f_(N)OR** |
    | :-: | :-: | :-: | :-: | :-: | :-: |
-   | 0 | 0 | 0 |  |  |  |
-   | 0 | 0 | 1 |  |  |  |
-   | 0 | 1 | 0 |  |  |  |
-   | 0 | 1 | 1 |  |  |  |
-   | 1 | 0 | 0 |  |  |  |
-   | 1 | 0 | 1 |  |  |  |
-   | 1 | 1 | 0 |  |  |  |
-   | 1 | 1 | 1 |  |  |  |
+   | 0 | 0 | 0 | 0 | 0 | 0 |
+   | 0 | 0 | 1 | 1 | 1 | 1 |
+   | 0 | 1 | 0 | 0 | 0 | 0 |
+   | 0 | 1 | 1 | 0 | 0 | 0 |
+   | 1 | 0 | 0 | 0 | 0 | 0 |
+   | 1 | 0 | 1 | 1 | 1 | 1 |
+   | 1 | 1 | 0 | 0 | 0 | 0 |
+   | 1 | 1 | 1 | 0 | 0 | 0 |
 
 ### Distributive laws
 
 1. Screenshot with simulated time waveforms. Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!
 
-   ![your figure]()
+   ![your figure](images/VHDL_output.png)
 
 2. Link to your public EDA Playground example:
 
-   [https://www.edaplayground.com/...](https://www.edaplayground.com/...)
+   [https://www.edaplayground.com/x/ZLft](https://www.edaplayground.com/x/ZLft)
