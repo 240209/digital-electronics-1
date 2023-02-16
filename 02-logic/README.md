@@ -47,4 +47,5 @@
 
 2. Link to your public EDA Playground example:
 
-   [https://www.edaplayground.com/x/JTg3](https://www.edaplayground.com/x/JTg3)
+   [https://www.edaplayground.com/x/JTeH](https://www.edaplayground.com/x/JTeH) (2bit)
+   [https://www.edaplayground.com/x/JTg3](https://www.edaplayground.com/x/JTg3) (4bit)
