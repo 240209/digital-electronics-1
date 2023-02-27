@@ -1,4 +1,4 @@
-Decoder truth table for **common anode** 7-segment display:
+# Decoder truth table for **common anode** 7-segment display:
 
    | **Symbol** | **Inputs** | **a** | **b** | **c** | **d** | **e** | **f** | **g** |
    | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
