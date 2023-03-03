@@ -70,25 +70,6 @@ begin
 
     report "Stimulus process started";
 
-    sig_blank <= '0';    -- Normal operation
-    sig_hex   <= "0011"; -- Some default value
-    wait for 50 ns;
-
-    sig_blank <= '1';    -- Blank display
-    wait for 150 ns;
-    sig_blank <= '0';    -- Normal operation
-    wait for 15 ns;
-
-    -- Loop for all hex values
-    for ii in 0 to 15 loop
-
-      -- Convert ii decimal value to 4-bit wide binary
-      -- s_hex <= std_logic_vector(to_unsigned(ii, s_hex'length));
-      sig_hex <= std_logic_vector(to_unsigned(ii, 4));
-      wait for 50 ns;
-
-    end loop;
-
     report "Stimulus process finished";
     wait;
 
