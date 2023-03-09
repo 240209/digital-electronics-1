@@ -34,7 +34,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity top is
     Port ( CLK100MHZ : in STD_LOGIC;
            BTNC : in STD_LOGIC;
-           SW : in STD_LOGIC_VECTOR (0 downto 0);
+           SW : in STD_LOGIC;
            LED : out STD_LOGIC_VECTOR (3 downto 0));
 end top;
 
@@ -45,6 +45,8 @@ architecture behavioral of top is
 
   -- Internal signals between flip-flops
   signal sig_ff0 : std_logic;
+  signal sig_ff1 : std_logic;
+  signal sig_ff2 : std_logic;
 
   -- WRITE YOUR CODE HERE
 
@@ -57,32 +59,38 @@ begin
           clk => CLK100MHZ,
           rst => BTNC,
           -- WRITE YOUR CODE HERE
-          
+          d => SW,
           q   => sig_ff0
       );
+    LED(0) <= sig_ff0;
 
   d_ff_1 : entity work.d_ff_rst
       port map (
           clk => CLK100MHZ,
           rst => BTNC,
           -- WRITE YOUR CODE HERE
-
+          d => sig_ff0,
+          q   => sig_ff1
       );
+    LED(1) <= sig_ff1;
 
   d_ff_2 : entity work.d_ff_rst
       port map (
           clk => CLK100MHZ,
           rst => BTNC,
           -- WRITE YOUR CODE HERE
-
+          d => sig_ff1,
+          q   => sig_ff2
       );
+    LED(2) <= sig_ff2;
 
   d_ff_3 : entity work.d_ff_rst
       port map (
           clk => CLK100MHZ,
           rst => BTNC,
           -- WRITE YOUR CODE HERE
-
+          d => sig_ff2,
+          q  => LED(3)
       );
 
 end architecture behavioral;

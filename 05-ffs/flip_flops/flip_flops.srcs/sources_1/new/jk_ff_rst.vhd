@@ -57,12 +57,15 @@ begin
     begin
         if rising_edge(clk) then
         
+            -- output reset
             if j='0' and k='1' then
                 sig_q <= '0';
-                
+            
+            -- output set to value of j
             elsif j='1' and k='0' then
                 sig_q <= '1';
-                
+            
+            -- keeping last value
             elsif j='1' and k='1' then
                 sig_q <= not sig_q;
             
