@@ -5,7 +5,7 @@
    | LD17 | N16, R11, G14 | `1,0,0` | `1,1,0` | `0,1,0` |
    
    Schematic:
-      ![Schematic](images/schematic.png)
+      ![Schematic](schematic.png)
 
 # Pmod ports JA, JB, JC, JD <-> FPGA pins connection:
    | **Pmod JA** | **Pmod JB** | **Pmod JC** | **Pmod JD** |
